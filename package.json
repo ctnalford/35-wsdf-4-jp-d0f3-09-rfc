@@ -1,0 +1,11 @@
+{
+  "name": "2Fb3426fb4354a48aca4b21b1b54c17853",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
